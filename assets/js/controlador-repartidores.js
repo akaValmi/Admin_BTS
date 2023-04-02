@@ -21,7 +21,7 @@ const repartidores = [
 
 
 
-function generarRepartidor(){
+function generarRepartidor() {
     let cardContainer = document.getElementById("container-cards");
     let cardHTML = "";
 

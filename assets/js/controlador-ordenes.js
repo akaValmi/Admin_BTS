@@ -1,46 +1,46 @@
 const orden = [{
-    productos: "pizza jaja",
-    direccion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis",
-    cliente: "Hidetaka Miyazaki",
-    monto: "cinco peso"
-  },
-  {
-    productos: "loca cola jaja",
-    direccion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis",
-    cliente: "Hideo Kojima",
-    monto: "cinco peso"
-  }
+  productos: "pizza jaja",
+  direccion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis",
+  cliente: "Hidetaka Miyazaki",
+  monto: "cinco peso"
+},
+{
+  productos: "loca cola jaja",
+  direccion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis",
+  cliente: "Hideo Kojima",
+  monto: "cinco peso"
+}
 ];
-  
+
 
 
 const repartidores = [
-    {
-        nombre: "Juan Perez",
-        telefono: "+504 9876-4321",
-        contraseña: "123",
-        correo: "juan@gmail.com"
-    },
-    {
-        nombre: "Pedro Martinez",
-        telefono: "+504 9876-4222",
-        contraseña: "456",
-        correo: "pedro@gmail.com"
-    },
-    {
-        nombre: "Maria Rodriguez",
-        telefono: "+504 9876-4777",
-        contraseña: "789",
-        correo: "maria@gmail.com"
-    }
+  {
+    nombre: "Juan Perez",
+    telefono: "+504 9876-4321",
+    contraseña: "123",
+    correo: "juan@gmail.com"
+  },
+  {
+    nombre: "Pedro Martinez",
+    telefono: "+504 9876-4222",
+    contraseña: "456",
+    correo: "pedro@gmail.com"
+  },
+  {
+    nombre: "Maria Rodriguez",
+    telefono: "+504 9876-4777",
+    contraseña: "789",
+    correo: "maria@gmail.com"
+  }
 ];
 
-function generarPedidos(){
-    let cards = document.getElementById("cards");
-    let pedidosHTML = "";
-    for (let i = 0; i < orden.length; i++) {
-        // Agregar un id único al botón Asignar
-        pedidosHTML += ` <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+function generarPedidos() {
+  let cards = document.getElementById("cards");
+  let pedidosHTML = "";
+  for (let i = 0; i < orden.length; i++) {
+    // Agregar un id único al botón Asignar
+    pedidosHTML += ` <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">Entrega</div>
         <div class="card-body">
           <p class="card-text">
@@ -70,8 +70,8 @@ function generarPedidos(){
 
         <select name="repartidores" id="repartidores">
             <option>${repartidores[i].nombre}</option>
-            <option>${repartidores[i+1].nombre}</option>
-            <option>${repartidores[i+1].nombre}</option>
+            <option>${repartidores[i + 1].nombre}</option>
+            <option>${repartidores[i + 1].nombre}</option>
             <option>${repartidores[i].nombre}</option>
         </select>
           </div>
@@ -86,8 +86,8 @@ function generarPedidos(){
 
       </div>
 `;
-    }
-    cards.innerHTML = pedidosHTML;
+  }
+  cards.innerHTML = pedidosHTML;
 
 }
 

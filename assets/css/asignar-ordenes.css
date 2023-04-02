@@ -26,7 +26,7 @@ body {
 
 
 
-#cards{
+#cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -38,20 +38,20 @@ body {
     height: 80vh;
 }
 
-.card{
+.card {
     width: 300px;
     height: 300px;
     background-color: #F2D64B;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
-    
+
     flex-direction: column;
 }
 
-#boton-asignar{
-    
+#boton-asignar {
+
     background-color: #0C1A26;
     color: #ffffff;
     border: none;
@@ -59,12 +59,12 @@ body {
     width: 150px;
     font-size: 14px;
     margin-bottom: 10px;
-    
+
 }
 
 
 
-#boton-asignar:hover{
+#boton-asignar:hover {
     background-color: #4f0052;
     color: #ffffff;
     border: none;
@@ -76,27 +76,29 @@ body {
 
 
 
-.card-body, .card-footer{
+.card-body,
+.card-footer {
     background-color: white;
 
 }
 
-.card-footer, .card-header{
+.card-footer,
+.card-header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modal-body{
+.modal-body {
     background-color: #0C1A26;
 }
 
-.modal-body button{
+.modal-body button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 
-    
-    
+
+
     background-color: #F2D64B;
     color: #000;
     border: none;
@@ -107,12 +109,12 @@ body {
 }
 
 
-#repartidores{
+#repartidores {
     width: 100%;
 
 }
 
-.modal-footer{
+.modal-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +122,7 @@ body {
 }
 
 
-.modal-header{
+.modal-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +130,7 @@ body {
     color: white;
 }
 
-#asignar-footer-modal{
+#asignar-footer-modal {
     background-color: #F2D64B;
     color: #000;
     border: none;
@@ -137,7 +139,7 @@ body {
     margin-bottom: 10px;
 }
 
-#asignar-footer-modal:hover{
+#asignar-footer-modal:hover {
     background-color: #4f0052;
     color: #ffffff;
     border: none;
@@ -146,7 +148,7 @@ body {
     margin-bottom: 10px;
 }
 
-#cerrar-footer-modal{
+#cerrar-footer-modal {
     background-color: #000000;
     color: white;
     border: none;
@@ -155,7 +157,7 @@ body {
     margin-bottom: 10px;
 }
 
-#cerrar-footer-modal:hover{
+#cerrar-footer-modal:hover {
     background-color: #4f0052;
     color: #ffffff;
     border: none;

@@ -2,7 +2,7 @@ const opciones = {
     1: "Categoria y Productos",
     2: "Repartidores",
     3: "Asignar Ordenes",
-    
+
 }
 
 
@@ -28,7 +28,7 @@ function botonesEventos() {
             } else if (i == 3) {
                 window.location.href = "asignar-ordenes.html";
             }
-            
+
         });
     }
 }
