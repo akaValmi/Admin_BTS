@@ -69,7 +69,7 @@ function botonesGenerar() {
               <div class="productos-lista">
                 ${listaProductos}
               </div>
-              <form>
+              <form id="form-productos">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre">
                 <label for="descripcion">Descripción:</label>

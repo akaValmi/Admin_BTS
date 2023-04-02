@@ -1,0 +1,152 @@
+body{
+    background-color: #0C1A26;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+.navbar{
+    background-color: #F2D64B;
+    height: 40px;
+}
+
+#logo-navbar{
+    
+    width: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fa-door-open {
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+}
+
+h5{
+    display: flex;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+        
+    
+}
+
+
+#container-cards{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.card{
+    background-color: #8C4820;
+    color: white;
+}
+
+.btn{
+    background-color: #F2D64B;
+    color: #000;
+    font-weight: 600;
+    border-radius: 0;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #000000;
+    color: #F2D64B;
+    font-weight: 600;
+    
+}
+
+
+  /*MODAL COSAS*/
+
+  .modal-content {
+    border-radius: 1rem;
+    background-color: #0C1A26;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .modal-header {
+    background-color: #F2D64B;
+    color: #000000;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+  }
+
+  .form-label{
+    color: #ffffff;
+  }
+  
+  .modal-footer {
+    background-color: #0C1A26;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #F2D64B;
+    border-color: #F2D64B;
+    color: black;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000;
+  }
+  
+  .btn-secondary {
+    background-color: #8C4820;
+    color: #000;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #000000;
+    border-color: #F2D64B;
+  }
+  
+  .form-control {
+    border-radius: 1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #F2D64B;
+  }
+  
+  
+  .modal-content {
+    animation: modal-show 0.3s ease;
+  }
+  
+  @keyframes modal-show {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
