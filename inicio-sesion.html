@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\form.css">
+</head>
+
+<body>
+
+    <div id="container-padre">
+        <div id="container-hijo">
+        <section>
+            <img id="logo" src="../assets/img/logo/logo-1.png" alt="" srcset="">
+        </section>
+        <section>
+            <form id="mi-formulario" onsubmit="return validarFormulario()" action="principal.html">
+                <div class="datos">
+                    <input type="email" name="correo" id="correo" placeholder="Correo Electrónico">
+                </div>
+                <div class="datos">
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                </div>
+                <div class="ayuda">
+                    <a href="">¿Necesitas ayuda?</a>
+                </div>
+                <div class="boton">
+                    <button type="submit" id="boton-inicio">Iniciar Sesión</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+</body>
+
+
+<script src="assets/js/controlador-form.js"></script>
+
+</html>

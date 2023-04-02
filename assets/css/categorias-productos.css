@@ -1,0 +1,257 @@
+body {
+    background-color: #0C1A26;
+}
+
+.navbar {
+    background-color: #F2D64B;
+    height: 40px;
+}
+
+#logo-navbar {
+    width: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.fa-door-open {
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+
+
+
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #F2D64B;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+
+    
+  }
+  
+  .boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+
+
+
+  #botones-opciones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+
+  }
+
+  #container-botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:90vh;
+    margin-top: 20px;
+  }
+
+  .fa-arrow-left{
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .fa-arrow-left:hover {
+    transform: scale(1.2);
+  }
+
+  #boton-modal {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #boton-modal:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+
+
+
+  /*MODAL COSAS*/
+
+.modal-content {
+    border-radius: 1rem;
+    background-color: #0C1A26;
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .modal-header {
+    background-color: #F2D64B;
+    color: #000000;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+  }
+
+  .form-label{
+    color: #ffffff;
+  }
+  
+  .modal-footer {
+    background-color: #0C1A26;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #F2D64B;
+    border-color: #F2D64B;
+    color: black;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000;
+  }
+  
+  .btn-secondary {
+    background-color: #8C4820;
+    color: #000;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #000000;
+    border-color: #F2D64B;
+  }
+  
+  .form-control {
+    border-radius: 1rem;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #F2D64B;
+  }
+  
+  /* Animaciones */
+  .modal-content {
+    animation: modal-show 0.3s ease;
+  }
+  
+  @keyframes modal-show {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  .eliminar-boton {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    border-radius: 100%;
+    position: relative;
+    transition: transform 0.2s ease-out;
+    margin-left: 20px;
+
+  }
+  
+  .eliminar-boton:hover {
+    transform:  scale(0.8);
+  }
+  
+  .ocultar{
+    display: none;
+  }
+
+
+
+
+
+  
+#productos-categorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: white;
+  
+}
+
+.card-productos{
+  width: 300px;
+  height: 150px;
+  margin: 5px;
+  
+  border-radius: 20px;
+  background-color: #8C4820;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  
+}
+.productos-lista{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.eliminar-producto{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  color: white;
+  border-radius: 100%;
+  transition: transform 0.2s ease-out;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.p{
+  font-size: 15px;
+  margin: 10px;
+}

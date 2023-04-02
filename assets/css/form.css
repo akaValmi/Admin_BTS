@@ -1,0 +1,62 @@
+body{
+    background-color: #0C1A26;
+}
+
+#logo{
+    display: block; 
+    margin: 0 auto; 
+    width: 50%; 
+}
+
+
+.datos input{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #0C1A26;
+}
+
+.boton {
+    text-align: center;
+  }
+
+  .datos{
+    
+        text-align: center;
+    
+  }
+
+.boton button{
+    width: 15%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 12px;
+    background-color: #F2D64B;
+}
+
+#container-padre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  
+}
+
+.ayuda{
+    text-align: right;
+    margin-right: 10%;
+}
+
+a{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.boton button:hover {
+    background-color: #f56410;
+    color: #ffffff;
+  }
