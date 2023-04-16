@@ -35,7 +35,6 @@
 
   <!--Modal-->
   <div>
-
     <button type="button" class="btn btn-primary btn-lg fixed-bottom" id="boton-modal" data-bs-toggle="modal"
       data-bs-target="#modal-Repartidores">Registrar nuevo repartidor</button>
     <!-- Modal -->
@@ -48,28 +47,37 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre:</label>
-              <input type="text" class="form-control" id="nombre">
-            </div>
+            
+<form action="http://localhost:3000/registroRepartidores" method="post"><div class="mb-3">
+<div>
+  <label for="nombre" class="form-label">Nombre:</label>
+  <input  class="form-control" id="nombre" name="nombre">
+</div>
 
-            <div class="mb-3">
-              <label for="correo" class="form-label">Correo electrónico:</label>
-              <input type="email" class="form-control" id="correo">
-            </div>
-            <div class="mb-3">
-              <label for="contraseña" class="form-label">Contraseña:</label>
-              <input type="password" class="form-control" id="contraseña">
-            </div>
-            <div class="mb-3">
-              <label for="telefono" class="form-label">Número de teléfono:</label>
-              <input type="tel" class="form-control" id="telefono">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary" onclick="agregarRepartidor()">Agregar</button>
-          </div>
+<div class="mb-3">
+  <label for="correo" class="form-label">Correo electrónico:</label>
+  <input class="form-control" id="correo" name="correo">
+</div>
+<div class="mb-3">
+  <label for="contraseña" class="form-label">Contraseña:</label>
+  <input class="form-control" id="contraseña" name="contraseña">
+</div>
+<div class="mb-3">
+  <label for="telefono" class="form-label">Número de teléfono:</label>
+  <input  class="form-control" id="telefono" name="telefono">
+</div>
+
+
+</div>
+
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+<button class="btn btn-primary" type="submit">Agregar</button>
+</form> 
+
+           
+
+        
+
         </div>
       </div>
     </div>
