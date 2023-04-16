@@ -2,6 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import repartidoresRouter from './routes/repartidoresRouter';
+import dotenv from 'dotenv';
+
+
 const app = express();
 const port = 3000;
 
@@ -17,8 +20,8 @@ const dbOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   };
-  
-  mongoose.connect("mongodb+srv://admin:1234@bts.8famhto.mongodb.net/repartidores",)
+  dotenv.config();
+  mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log('MongoDB connection error:', err));
 
