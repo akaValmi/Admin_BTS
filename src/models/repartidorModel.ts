@@ -1,7 +1,7 @@
 import mongoose, { Document, Model } from "mongoose";
 
 // Interfaz para el modelo de repartidor
-interface IRepartidor extends Document {
+interface Repartidor extends Document {
   nombre: string;
   correo: string;
   contraseña: string;
@@ -9,7 +9,7 @@ interface IRepartidor extends Document {
 }
 
 // Esquema para el modelo de repartidor
-const RepartidorSchema = new mongoose.Schema<IRepartidor>({
+const RepartidorSchema = new mongoose.Schema<Repartidor>({
   nombre: { type: String, required: true },
   correo: { type: String, required: true },
   contraseña: { type: String, required: true },
@@ -17,5 +17,5 @@ const RepartidorSchema = new mongoose.Schema<IRepartidor>({
 });
 
 // Exportar el modelo de repartidor
-const Repartidor: Model<IRepartidor> = mongoose.model("Repartidor", RepartidorSchema);
+const Repartidor: Model<Repartidor> = mongoose.model("Repartidor", RepartidorSchema);
 export default Repartidor;

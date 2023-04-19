@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import repartidoresRouter from './routes/repartidoresRouter';
+import repartidoresCategoria from './routes/categoriasRoutes';
 import dotenv from 'dotenv';
 
 
@@ -26,8 +27,8 @@ const dbOptions = {
   .catch((err) => console.log('MongoDB connection error:', err));
 
 
-  app.use('/', repartidoresRouter);
-
+  app.use('/repartidores', repartidoresRouter);
+  app.use('/categorias', repartidoresCategoria);
 
 
 app.listen(port, () => {
