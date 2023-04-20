@@ -5,12 +5,15 @@ import Categoria from "../models/categoriaModel";
 const agregarCategoria = async (req: Request, res: Response) => {
   try {
     const {  nombreCategoria } = req.body;
-
+    const ultimaCategoria = await Categoria.findOne().sort('-id').exec();
+ 
     // Crear un nuevo documento de repartidor con los datos del formulario
     const nuevaCategoria = new Categoria({
-       nombreCategoria,
+      nombreCategoria,
+      //id : ultimaCategoria ? ultimaCategoria.id + 1 : 1,
+      Productos: []
     });
-
+    
     // Guardar el nuevo documento de repartidor en la base de datos
     await nuevaCategoria.save();
 

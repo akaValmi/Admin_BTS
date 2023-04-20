@@ -4,9 +4,11 @@ import mongoose from "mongoose";
 import repartidoresRouter from './routes/repartidoresRouter';
 import repartidoresCategoria from './routes/categoriasRoutes';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 
 const app = express();
+app.use(cors());
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));

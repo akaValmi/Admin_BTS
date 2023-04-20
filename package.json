@@ -19,6 +19,7 @@
   "homepage": "https://github.com/akaValmi/Admin_BTS#readme",
   "dependencies": {
     "@types/dotenv": "^8.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.3"
