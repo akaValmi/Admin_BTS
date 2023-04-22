@@ -2,6 +2,7 @@ import mongoose, { Document, Model } from "mongoose";
 
 // Interfaz para el modelo de repartidor
 interface Repartidor extends Document {
+  //id: number;
   nombre: string;
   correo: string;
   contraseña: string;
@@ -10,6 +11,7 @@ interface Repartidor extends Document {
 
 // Esquema para el modelo de repartidor
 const RepartidorSchema = new mongoose.Schema<Repartidor>({
+  //id:{type: Number}, 
   nombre: { type: String, required: true },
   correo: { type: String, required: true },
   contraseña: { type: String, required: true },

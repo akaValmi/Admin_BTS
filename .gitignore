@@ -5,3 +5,4 @@ node_modules/
 *.d.ts.map
 *.json
 *.json.map
+.env
