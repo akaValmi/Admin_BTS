@@ -1,8 +1,10 @@
 import express from "express";
-import { agregarCategoria } from "../controllers/categoriaController";
+import { agregarCategoria, obtenerCategorias } from "../controllers/categoriaController";
 
 const router = express.Router();
 
 router.post("/registroCategorias", agregarCategoria);
+
+router.get("/", obtenerCategorias);
 
 export default router;

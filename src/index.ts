@@ -1,11 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
+
 import repartidoresRouter from './routes/repartidoresRouter';
-import repartidoresCategoria from './routes/categoriasRoutes';
+import categoriasRouter from './routes/categoriasRouter';
+import productosRouter from './routes/productosRouter';
+
 import dotenv from 'dotenv';
 import cors from 'cors';
 import Repartidor from "./models/repartidorModel";
+import Categoria from "./models/categoriaModel";
 
 
 const app = express();
@@ -31,9 +35,10 @@ const dbOptions = {
 
 
   app.use('/repartidores', repartidoresRouter);
-  app.use('/categorias', repartidoresCategoria);
+  app.use('/categorias', categoriasRouter);
+  app.use('/productos', productosRouter);
 
-  app.get('/repartidores', async (req, res) => {
+ /* app.get('/repartidores', async (req, res) => {
     try {
       const repartidors = await Repartidor.find({});
       res.json(repartidors);
@@ -42,6 +47,17 @@ const dbOptions = {
       res.status(500).send('Error al obtener los repartidores');
     }
   });
+  
+  app.get('/categorias/:id', async (req, res) => {
+    try {
+      const categoria = await Categoria.findById(req.params.id);
+      res.json(categoria);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Error al obtener el categoria');
+    }
+  });
+*/
   
 
 

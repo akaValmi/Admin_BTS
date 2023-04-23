@@ -8,7 +8,6 @@ const agregarRepartidor = async (req: Request, res: Response) => {
    // const currentCount = await Repartidor.countDocuments();
    // const nuevoId = currentCount + 1;
     
-
     // Crear un nuevo documento de repartidor con los datos del formulario
     const nuevoRepartidor = new Repartidor({
       //id : nuevoId,
@@ -31,3 +30,15 @@ const agregarRepartidor = async (req: Request, res: Response) => {
 };
 
 export { agregarRepartidor };
+
+const obtenerRepartidores = async (req: Request, res: Response) => {
+  try {
+    const repartidores = await Repartidor.find({});
+    res.json(repartidores);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error al obtener los repartidores');
+  }
+};
+
+export { obtenerRepartidores };

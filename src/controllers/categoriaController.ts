@@ -5,13 +5,13 @@ import Categoria from "../models/categoriaModel";
 const agregarCategoria = async (req: Request, res: Response) => {
   try {
     const {  nombreCategoria } = req.body;
-    const ultimaCategoria = await Categoria.findOne().sort('-id').exec();
+    //const ultimaCategoria = await Categoria.findOne().sort('-id').exec();
  
     // Crear un nuevo documento de repartidor con los datos del formulario
     const nuevaCategoria = new Categoria({
       nombreCategoria,
       //id : ultimaCategoria ? ultimaCategoria.id + 1 : 1,
-      Productos: []
+      
     });
     
     // Guardar el nuevo documento de repartidor en la base de datos
@@ -25,3 +25,21 @@ const agregarCategoria = async (req: Request, res: Response) => {
 };
 
 export { agregarCategoria };
+
+
+
+
+
+
+
+const obtenerCategorias = async (req: Request, res: Response) => {
+  try {
+    const categorias = await Categoria.find({});
+    res.json(categorias);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error al obtener los repartidores');
+  }
+};
+
+export { obtenerCategorias };
