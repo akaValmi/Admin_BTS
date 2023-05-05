@@ -11,6 +11,7 @@ import cors from 'cors';
 import Repartidor from "./models/repartidorModel";
 import Categoria from "./models/categoriaModel";
 
+//jjjjjj
 
 const app = express();
 app.use(cors());
@@ -28,10 +29,12 @@ const dbOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   };
+
   dotenv.config();
   mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log('MongoDB connection error:', err));
+
 
 
   app.use('/repartidores', repartidoresRouter);
