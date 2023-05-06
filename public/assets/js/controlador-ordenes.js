@@ -14,7 +14,7 @@ function generarOrden() {
     for (let i = 0; i < ordenes.length; i++) { 
       let productosHTML = "";
       for (let j = 0; j < ordenes[i].productos.length; j++) {
-        productosHTML += `${ordenes[i].productos[j].nombreProducto}, `;
+        productosHTML += `${ordenes[i].productos[j].producto.nombreProducto}, `;
       }
       productosHTML = productosHTML.slice(0, -2); // Eliminar la última coma y espacio
       cardHTML += `
