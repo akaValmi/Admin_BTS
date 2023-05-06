@@ -186,8 +186,8 @@ body {
   .eliminar-boton {
     width: 30px;
     height: 30px;
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border-radius: 100%;
     position: relative;
     transition: transform 0.2s ease-out;
@@ -278,3 +278,6 @@ body {
 #agregar-producto:hover {
   background-color: #303f9f;
 }
+
+
+

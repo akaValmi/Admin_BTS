@@ -109,3 +109,28 @@ body{
     text-align: center;
   }
   
+
+
+
+
+  /*boton eliminar :)*/
+  
+.eliminar {
+  background-color: #FF4136; /* color rojo */
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* animación */
+  position: relative; /* agregado para poder posicionar el pseudo-elemento */
+}
+
+.eliminar:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+  

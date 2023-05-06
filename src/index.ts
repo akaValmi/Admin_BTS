@@ -11,7 +11,6 @@ import cors from 'cors';
 import Repartidor from "./models/repartidorModel";
 import Categoria from "./models/categoriaModel";
 
-//jjjjjj
 
 const app = express();
 app.use(cors());
